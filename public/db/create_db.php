@@ -15,7 +15,7 @@ if ($conn->query($sql) === FALSE) {
 }
 
 $db_name = 'edu_test';
-$conn = new mysqli($servername, $username, $password, $db_name);
+$conn = new mysqli($server_name, $username, $password, $db_name);
 
 $table1 = "CREATE TABLE events (
       id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -26,7 +26,7 @@ $table1 = "CREATE TABLE events (
       reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )";
       
-      if ($conn->query($sql) === TRUE && $conn->query($table1) === FALSE) {
+      if ($conn->query($table1) === FALSE) {
             echo "<h1>Error creating table: </h1>" . $conn->error; 
       }
 
@@ -39,10 +39,14 @@ $table2 = "CREATE TABLE users (
       reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )";
       
-      if ($conn->query($sql) === TRUE && $conn->query($table2) === FALSE) {
+      if ($conn->query($table2) === FALSE) {
             echo "<h1>Error creating table: </h1>" . $conn->error;
       }
 
-if ($conn->query($sql) === TRUE) {
-      echo('<h1>Database created! You can return back.</h1>');
-}
+$upload_csv = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/public/php/utenti.csv' INTO TABLE users
+            FIELDS TERMINATED BY ','
+            OPTIONALLY ENCLOSED BY '\"'
+            LINES TERMINATED BY '\n'
+            IGNORE 1 LINES";
+
+$upload_users = mysqli_query($conn, $upload_csv);
