@@ -35,7 +35,7 @@ $table2 = "CREATE TABLE users (
       usr_name VARCHAR(50) NOT NULL,
       usr_surname VARCHAR(100) NOT NULL,
       usr_email VARCHAR(255) NOT NULL,
-      usr_inbox_email VARCHAR(255) NOT NULL,
+      inbox_email VARCHAR(255) NOT NULL,
       reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )";
       
@@ -48,6 +48,6 @@ $upload_csv = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/pu
             OPTIONALLY ENCLOSED BY '\"'
             LINES TERMINATED BY '\n'
             IGNORE 1 LINES
-            (usr_name,usr_surname,usr_email,usr_inbox_email)";
+            (usr_name,usr_surname,usr_email,inbox_email)";
 
 $upload_users = mysqli_query($conn, $upload_csv);

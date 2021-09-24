@@ -19,7 +19,7 @@
                         $inbox_email = 'https://generator.email/'.trim($_REQUEST['user_email']);
                         
                         // Performing insert query execution
-                        $sql = "INSERT INTO users (usr_name, usr_surname, usr_email, usr_inbox_email) VALUES ('$name', 
+                        $sql = "INSERT INTO users (usr_name, usr_surname, usr_email, inbox_email) VALUES ('$name', 
                         '$surname', '$email', '$inbox_email')";
                         
                         if(mysqli_query($conn, $sql)){
