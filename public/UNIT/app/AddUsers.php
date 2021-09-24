@@ -12,11 +12,11 @@ class AddUsers
       public function uploadCsv($servername, $username, $password, $dbname) {
             $this->conn = new mysqli($servername, $username, $password, $dbname);
 
-            $this->sql = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/public/php/utenti.csv' INTO TABLE users
+            $this->sql = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/public/php/utenti.csv' IGNORE INTO TABLE users
                         FIELDS TERMINATED BY ','
-                        OPTIONALLY ENCLOSED BY '\"'
                         LINES TERMINATED BY '\n'
-                        IGNORE 1 LINES";
+                        IGNORE 1 LINES
+                        (usr_name,usr_surname,usr_email,inbox_email)";
 
             $this->result = mysqli_query($this->conn, $this->sql);
 

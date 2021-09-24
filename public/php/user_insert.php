@@ -4,7 +4,6 @@
       <!-- UIkit CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
 
-      <link rel="stylesheet" href="../css/style.scss">
       <title>User insert page</title>
       </head>
       <body>
@@ -24,8 +23,8 @@
                         
                         if(mysqli_query($conn, $sql)){
                               echo "<h3>User data correctly registered</h3>";     
-                              echo nl2br("\n$name\n $surname\n "
-                                    . "$email\n");
+                              echo( nl2br("\n$name\n $surname\n "
+                                    . "$email\n"));
                         } else{
                               echo "ERROR: Hush! Sorry $sql. " 
                                     . mysqli_error($conn);

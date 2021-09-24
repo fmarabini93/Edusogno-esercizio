@@ -45,7 +45,6 @@ $table2 = "CREATE TABLE users (
 
 $upload_csv = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/public/php/utenti.csv' INTO TABLE users
             FIELDS TERMINATED BY ','
-            OPTIONALLY ENCLOSED BY '\"'
             LINES TERMINATED BY '\n'
             IGNORE 1 LINES
             (usr_name,usr_surname,usr_email,inbox_email)";

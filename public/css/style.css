@@ -1,0 +1,52 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      height: 100vh;
+      font-family: 'Acme', sans-serif;
+}
+
+h1 {
+      color: tomato;
+}
+
+h2,
+input {
+      font-family: 'Acme', sans-serif;
+      background-color: transparent;
+}
+
+h2 {
+      color: teal;
+}
+
+input {
+      border: 1px solid burlywood;
+      border-radius: 3px;
+}
+input:focus {
+      box-shadow: 0 0 15px #719ECE;
+}
+
+.submit {
+      color: teal;
+      cursor: pointer;
+}
+.submit:hover {
+      box-shadow: 0 0 10px burlywood;
+      transition: 0.2s;
+}
+
+.db_btn {
+      padding: 10px;
+      margin-left: 10px;
+      margin-top: 10px;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+}
