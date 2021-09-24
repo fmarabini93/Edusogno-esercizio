@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use App\Database;
 
-class DatabaseConnectionTest extends TestCase
+class DatabaseTest extends TestCase
 {
       private $server_name = "localhost";
       private $username = "root";
