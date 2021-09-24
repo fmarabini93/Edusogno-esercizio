@@ -47,6 +47,7 @@ $upload_csv = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/pu
             FIELDS TERMINATED BY ','
             OPTIONALLY ENCLOSED BY '\"'
             LINES TERMINATED BY '\n'
-            IGNORE 1 LINES";
+            IGNORE 1 LINES
+            (usr_name,usr_surname,usr_email,usr_inbox_email)";
 
 $upload_users = mysqli_query($conn, $upload_csv);

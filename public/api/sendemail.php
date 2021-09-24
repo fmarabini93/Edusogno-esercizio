@@ -26,7 +26,7 @@
             $result = mysqli_query($conn, $sql);
             $attendees = [];
             while ($row = $result->fetch_assoc()) {
-            $attendees[] = $row;
+                  $attendees[] = $row;
             };
 
             try {

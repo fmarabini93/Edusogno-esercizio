@@ -11,14 +11,14 @@
       <title>Test Edusogno</title>
       </head>
       <body>
-            <form action="db/create_db.php" method="POST">
+            <form action="php/create_db.php" method="POST">
                   <input type="submit" value="Create DB">
             </form>
             <div class="uk-container">
 
                   <h2 class="uk-text-center uk-text-uppercase">User form</h2>
                   <!-- Form utente -->
-                  <form action="db/user_insert.php" method="post">
+                  <form action="php/user_insert.php" method="post">
                         <label for="userName">Name</label>
                         <input type="text" id="userName" name="user_name" class="uk-input uk-margin-bottom" placeholder="Insert your name"></input>
 
@@ -35,7 +35,7 @@
 
                   <h2 class="uk-text-center uk-text-uppercase">Event form</h2>
                   <!-- Form evento -->
-                  <form action="db/event_insert.php" method="post">
+                  <form action="php/event_insert.php" method="post">
                         <label for="eventName">Name</label>
                         <input type="text" id="eventName" name="event_name" class="uk-input uk-margin-bottom" placeholder="Insert event name"></input>
 

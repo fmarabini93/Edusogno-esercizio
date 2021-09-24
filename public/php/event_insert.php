@@ -11,7 +11,7 @@
             <div class="uk-container">
 
                   <?php
-                        include "db_connection.php";
+                        include "../db/db_connection.php";
                         // Taking all 3 values from the form data(input)
                         $name =  trim($_REQUEST['event_name']);
                         $description = trim($_REQUEST['event_description']);
