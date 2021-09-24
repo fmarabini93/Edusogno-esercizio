@@ -12,7 +12,7 @@
       </head>
       <body>
             <form action="php/create_db.php" method="POST">
-                  <input type="submit" value="Create DB">
+                  <input type="submit" onclick="this.disabled" value="Create DB">
             </form>
             <div class="uk-container">
 
@@ -28,7 +28,7 @@
                         <label for="userEmail">Email</label>
                         <input type="email" id="userEmail" name="user_email" class="uk-input uk-margin-bottom" placeholder="Insert your email"></input>
 
-                        <input type="submit" value="Submit" class="submit uk-width-1-1 uk-padding-small">
+                        <input type="submit" value="Submit" onclick="this.disabled" class="submit uk-width-1-1 uk-padding-small">
                   </form>
 
                   <hr class="uk-width-1-2 uk-margin-auto">
@@ -48,7 +48,7 @@
                         <label for="eventHour">Hour</label>
                         <input type="time" id="eventHour" name="event_hour" class="uk-input uk-margin-bottom" placeholder="Insert event hour"></input>
 
-                        <input type="submit" value="Submit" class="submit uk-width-1-1 uk-padding-small">
+                        <input type="submit" value="Submit" onclick="this.disabled" class="submit uk-width-1-1 uk-padding-small">
                   </form>
 
             </div>

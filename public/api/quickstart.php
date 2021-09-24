@@ -164,7 +164,7 @@
               <input readonly type='hidden' name='event_date' value=$date></input>
               <input readonly type='hidden' name='event_hour' value=$hour></input>
               <input readonly type='hidden' name='event_link' value=$link></input>
-              <input type='submit' value='Send email to attendees'>
+              <input type='submit' onclick='this.disabled' value='Send email to attendees'>
             </form>"
       ;
       ?>

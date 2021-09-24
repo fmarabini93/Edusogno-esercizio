@@ -34,7 +34,7 @@
                                           <input readonly type='text' name='name' value=$name></input><br>
                                           <input readonly type='date' name='date' value=$date></input><br>
                                           <input readonly type='time' name='hour' value=$hour></input><br>
-                                          <input type='submit' value='Create Google Calendar event'>
+                                          <input type='submit' onclick='this.disabled' value='Create Google Calendar event'>
                                     </form>");
                         } else {
                               echo "ERROR: Hush! Sorry $sql. " 
