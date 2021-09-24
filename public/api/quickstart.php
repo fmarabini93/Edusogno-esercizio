@@ -134,9 +134,7 @@
           'dateTime' => $dateTime,
           'timeZone' => 'America/Los_Angeles',
         ),
-        'attendees' => array(
-          'email' => 'fabio.marabini1.edusogno.test@gmail.com'
-        ),
+        'attendees' => $attendees_email,
         'reminders' => array(
           'useDefault' => FALSE,
           'overrides' => array(
