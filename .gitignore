@@ -556,3 +556,13 @@ composer.lock
 *.vob
 *.wmv
 *.webm
+
+### Credentials ###
+public/api/credentials.json
+public/api/token.json
+
+### Google /vendor ###
+public/api/vendor/
+
+### PHPUnit /vendor ###
+public/UNIT/vendor/
