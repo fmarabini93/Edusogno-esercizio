@@ -2,7 +2,7 @@
 
 $server_name = "localhost";
 $username = "root";
-$password = "";
+$password = "W,5--hjQ";
 $conn = new mysqli($server_name, $username, $password); 
 
 if ($conn->connect_error) {
@@ -43,7 +43,7 @@ $table2 = "CREATE TABLE users (
             echo "<h1>Error creating table: </h1>" . $conn->error;
       }
 
-$upload_csv = "LOAD DATA LOCAL INFILE '/home/kidlo/Boolean/Edusogno-esercizio/public/php/utenti.csv' INTO TABLE users
+$upload_csv = "LOAD DATA INFILE '/srv/http/Edusogno-esercizio/public/php/utenti.csv' INTO TABLE users
             FIELDS TERMINATED BY ','
             LINES TERMINATED BY '\n'
             IGNORE 1 LINES
